@@ -105,6 +105,7 @@ class Scratch3YourExtension {
 
     beweeg_naar_voren() {
     }
+    
 }
 
 module.exports = Scratch3YourExtension;
