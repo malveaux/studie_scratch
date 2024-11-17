@@ -42,6 +42,14 @@ class Scratch3YourExtension {
                     }
                 },
                 {
+                    opcode: 'loop2',
+                    blockType: BlockType.LOOP,
+                    text: 'zolang pad naar voren',
+                    terminal: true,
+                    filter: [ TargetType.SPRITE, TargetType.STAGE ],
+                    arguments: {}
+                },
+                {
                     opcode: 'spookje',
                     blockType: BlockType.BOOLEAN,
                     text: '[PLAATJE]',
@@ -53,6 +61,18 @@ class Scratch3YourExtension {
                             flipRTL: true
                         }
                     }
+                },
+                {
+                    opcode: 'aardbeien',
+                    blockType: BlockType.BOOLEAN,
+                    text: 'er aardbeien zijn',
+                    arguments: {}
+                },
+                {
+                    opcode: 'vraagtekens',
+                    blockType: BlockType.BOOLEAN,
+                    text: '??????????',
+                    arguments: {}
                 },
                 {
                     opcode: 'als_dan',
@@ -105,11 +125,26 @@ class Scratch3YourExtension {
         };
     }
 
+    loop2() {
+    }
+
     spookje () {
         return true;
     }
 
+    aardbeien() {
+        return true;
+    }
+
+    vraagtekens() {
+        return true;
+    }
+
     als_dan({RICHTING}) {
+        return true;
+    }
+
+    als_dan_anders({RICHTING}) {
         return true;
     }
 
