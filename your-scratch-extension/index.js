@@ -68,6 +68,19 @@ class Scratch3YourExtension {
                     }
                 },
                 {
+                    opcode: 'als_dan_anders',
+                    blockType: BlockType.CONDITIONAL,
+                    branchCount: 2,
+                    text: ['als pad [RICHTING]', 'anders'],
+                    terminal: true,
+                    arguments: {
+                        RICHTING: {
+                            type: ArgumentType.STRING,
+                            menu: 'richtings_menu'
+                        }
+                    }
+                },
+                {
                     opcode: 'draai',
                     blockType: BlockType.COMMAND,
                     text: 'draai [RICHTING]',
@@ -86,7 +99,7 @@ class Scratch3YourExtension {
             ],
             menus: {
                 richtings_menu: {
-                    items: ['naar links', 'naar rechts']
+                    items: ['naar links', 'naar rechts', 'naar voren', 'naar achteren']
                 }
             }
         };
